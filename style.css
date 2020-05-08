@@ -3,12 +3,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-:root{
-    --hue-neutral:200;
-}
-
 body{
-    --hue: var(--hue-neutral);
+    background-color: #1d539f;
     padding: 0;
     margin: 0;
     display: flex;
@@ -16,7 +12,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%);
 }
 
 .container{
@@ -50,9 +45,8 @@ h1{
 }
 
 .btn{
-    --hue: var(--hue-neutral);
-    background-color: hsl(200, 82%, 42%);
-    border: 0 solid hsl(var(--hue), 100%, 30%);
+    background-color: #1d539f;
+    border: 0 solid #1d539f;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
