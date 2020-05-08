@@ -69,9 +69,9 @@ function selectAnswer(e){
     })
     if (correct) {
         points += 1; 
-        score.textContent = `Correct answer: ${points}`;
+        score.textContent = `Correct answer: ${points}/5`;
         if (points > 1){
-            score.textContent = `Correct answers: ${points}`;
+            score.textContent = `Correct answers: ${points}/5`;
         } 
     } 
 }
