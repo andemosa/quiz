@@ -10,8 +10,15 @@ let points = 0
 let currentQuestion = 1
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', getNextQuestion)
+if (startButton.addEventListener) {
+    startButton.addEventListener('click', startGame)
+}else 
+{startButton.attachEvent('onclick', startGame)};
+
+if (nextButton.addEventListener) {
+    nextButton.addEventListener('click', getNextQuestion)
+}else 
+{nextButton.attachEvent('onclick', getNextQuestion)};
 
 function getNextQuestion(){
     currentQuestionIndex++
